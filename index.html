@@ -1,768 +1,777 @@
 <!DOCTYPE html>
 <html lang="el" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ιωάννα Καρούζη | Ψυχολόγος - Ψυχοθεραπεύτρια</title>
-    <meta name="description" content="Ψυχολόγος – Ψυχοθεραπεύτρια, μέλος του European Association for Psychotherapy (EAP). Ατομική Ψυχοθεραπεία, Συμβουλευτική & Προσωπική Ανάπτυξη.">
-    
-    <!-- Google Fonts: Cormorant Garamond (Serif/Elegant) & Plus Jakarta Sans (Modern/Clean) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ιωάννα Καρούζη | Ψυχολόγος - Ψυχοθεραπεύτρια</title>
+    <meta name="description" content="Ψυχολόγος – Ψυχοθεραπεύτρια, μέλος του European Association for Psychotherapy (EAP). Ατομική Ψυχοθεραπεία, Συμβουλευτική & Προσωπική Ανάπτυξη.">
+    <!-- Added Favicon -->
+    <link rel="icon" href="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6c518ecce2b0417e345.png" type="image/png">
+    
+    <!-- Google Fonts: Cormorant Garamond (Serif/Elegant) & Plus Jakarta Sans (Modern/Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Tailwind Configuration -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        psy: {
-                            base: '#FFFAF5',      // Warm Cream / Floral White
-                            dark: '#4A3B32',      // Deep Coffee Brown
-                            accent: '#B07D62',    // Terracotta
-                            green: {
-                                light: '#97b844', // Fresh Olive
-                                dark: '#7b8d14',  // Deep Moss
-                            },
-                            muted: '#E3D5CA',     // Soft Beige
-                            sand: '#F5EBE0',      // Light Warm Sand
-                            gold: '#DDB892',      // Warm Wheat
-                        }
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    animation: {
-                        'float': 'float 8s ease-in-out infinite',
-                        'fade-up': 'fadeUp 1s ease-out forwards',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-15px)' },
-                        },
-                        fadeUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
-                    },
-                    boxShadow: {
-                        'soft': '0 10px 40px -10px rgba(74, 59, 50, 0.05)',
-                        'card-hover': '0 20px 40px -10px rgba(123, 141, 20, 0.15)',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        psy: {
+                            base: '#FFFAF5',      // Warm Cream / Floral White
+                            dark: '#4A3B32',      // Deep Coffee Brown
+                            accent: '#B07D62',    // Terracotta
+                            green: {
+                                light: '#97b844', // Fresh Olive
+                                dark: '#7b8d14',  // Deep Moss
+                            },
+                            muted: '#E3D5CA',     // Soft Beige
+                            sand: '#F5EBE0',      // Light Warm Sand
+                            gold: '#DDB892',      // Warm Wheat
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 8s ease-in-out infinite',
+                        'fade-up': 'fadeUp 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(74, 59, 50, 0.05)',
+                        'card-hover': '0 20px 40px -10px rgba(123, 141, 20, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
 
-    <style>
-        /* Custom Styles & Reset */
-        body {
-            background-color: #FFFAF5;
-            color: #4A3B32;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
+    <style>
+        /* Custom Styles & Reset */
+        body {
+            background-color: #FFFAF5;
+            color: #4A3B32;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
 
-        /* Smooth Scrollbar */
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #FFFAF5;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #7b8d14; /* Using the new green for scrollbar */
-            border-radius: 3px;
-        }
-        
-        /* Glassmorphism Utilities */
-        .glass {
-            background: rgba(255, 250, 245, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(176, 125, 98, 0.1);
-        }
+        /* Smooth Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFFAF5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #7b8d14; /* Using the new green for scrollbar */
+            border-radius: 3px;
+        }
+        
+        /* Glassmorphism Utilities */
+        .glass {
+            background: rgba(255, 250, 245, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(176, 125, 98, 0.1);
+        }
 
-        /* Typography Utilities */
-        .text-balance {
-            text-wrap: balance;
-        }
+        /* Typography Utilities */
+        .text-balance {
+            text-wrap: balance;
+        }
 
-        /* Animation Classes for JS Observer */
-        .reveal-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: all 1.2s cubic-bezier(0.2, 1, 0.3, 1);
-        }
-        .reveal-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        /* Animation Classes for JS Observer */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1.2s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-        /* Gradient Text (Earth to Green) */
-        .text-gradient-earth {
-            background: linear-gradient(to right, #B07D62, #7b8d14);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+        /* Gradient Text (Earth to Green) */
+        .text-gradient-earth {
+            background: linear-gradient(to right, #B07D62, #7b8d14);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
 </head>
 <body class="relative selection:bg-psy-green-light/30 selection:text-psy-dark">
 
-    <!-- Navigation -->
-    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6">
-        <div class="container mx-auto px-6 md:px-12">
-            <div id="nav-container" class="glass rounded-full px-8 py-3 flex items-center justify-between transition-all duration-300 shadow-sm border border-psy-dark/5">
-                
-                <!-- Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="relative w-10 h-10 md:w-14 md:h-14 flex items-center justify-center transition-transform hover:scale-105 opacity-90">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6c518ecce2b0417e345.png" alt="Logo Ioanna Karouzi" class="w-full h-full object-contain">
-                    </div>
-                    <div class="hidden md:block">
-                        <span data-i18n="logo_name" class="block font-serif text-lg leading-none tracking-wide text-psy-dark font-medium">ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ</span>
-                        <span data-i18n="logo_sub" class="block font-sans text-[9px] leading-none tracking-[0.25em] text-psy-accent mt-1 uppercase">Ψυχολογος - Ψυχοθεραπευτρια</span>
-                    </div>
-                </a>
+    <!-- Navigation -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-6">
+        <div class="container mx-auto px-6 md:px-12">
+            <div id="nav-container" class="glass rounded-full px-8 py-3 flex items-center justify-between transition-all duration-300 shadow-sm border border-psy-dark/5">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="relative w-10 h-10 md:w-14 md:h-14 flex items-center justify-center transition-transform hover:scale-105 opacity-90">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6c518ecce2b0417e345.png" alt="Logo Ioanna Karouzi" class="w-full h-full object-contain">
+                    </div>
+                    <div class="hidden md:block">
+                        <span data-i18n="logo_name" class="block font-serif text-lg leading-none tracking-wide text-psy-dark font-medium">ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ</span>
+                        <span data-i18n="logo_sub" class="block font-sans text-[9px] leading-none tracking-[0.25em] text-psy-accent mt-1 uppercase">Ψυχολογος - Ψυχοθεραπευτρια</span>
+                    </div>
+                </a>
 
-                <!-- Desktop Menu -->
-                <nav class="hidden lg:flex items-center gap-12">
-                    <a href="#about" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
-                        <span data-i18n="nav_bio">Βιογραφικο</span>
-                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                    <a href="#services" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
-                        <span data-i18n="nav_services">Υπηρεσιες</span>
-                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                    <a href="#gallery" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
-                        <span data-i18n="nav_gallery">Χωρος</span>
-                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                    <a href="#contact" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
-                        <span data-i18n="nav_contact">Επικοινωνια</span>
-                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
-                    </a>
-                </nav>
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex items-center gap-12">
+                    <a href="#about" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
+                        <span data-i18n="nav_bio">Βιογραφικο</span>
+                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
+                    </a>
+                    <a href="#services" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
+                        <span data-i18n="nav_services">Υπηρεσιες</span>
+                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
+                    </a>
+                    <a href="#gallery" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
+                        <span data-i18n="nav_gallery">Χωρος</span>
+                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="text-xs uppercase tracking-[0.15em] text-psy-dark/70 hover:text-psy-green-dark transition-colors relative group">
+                        <span data-i18n="nav_contact">Επικοινωνια</span>
+                        <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-psy-green-dark transition-all duration-500 group-hover:w-full"></span>
+                    </a>
+                </nav>
 
-                <!-- Actions -->
-                <div class="flex items-center gap-4">
-                    <!-- Language Switch -->
-                    <button id="lang-btn" class="text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-psy-dark/20 hover:bg-psy-dark hover:text-white transition-all duration-300">
-                        EN
-                    </button>
+                <!-- Actions -->
+                <div class="flex items-center gap-4">
+                    <!-- Language Switch -->
+                    <button id="lang-btn" class="text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-psy-dark/20 hover:bg-psy-dark hover:text-white transition-all duration-300">
+                        EN
+                    </button>
 
-                    <a href="https://www.instagram.com/ioannakarouz_psy/" target="_blank" class="hidden md:flex items-center justify-center w-8 h-8 rounded-full border border-psy-dark/10 text-psy-dark/60 hover:border-psy-green-dark hover:text-psy-green-dark transition-all duration-300">
-                        <i data-lucide="instagram" class="w-4 h-4"></i>
-                    </a>
-                    
-                    <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" target="_blank" class="bg-psy-dark text-white px-6 py-2.5 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-psy-green-dark transition-colors duration-500 shadow-sm hidden sm:block">
-                        <span data-i18n="btn_book">Κλειστε Ραντεβου</span>
-                    </a>
+                    <a href="https://www.instagram.com/ioannakarouz_psy/" target="_blank" class="hidden md:flex items-center justify-center w-8 h-8 rounded-full border border-psy-dark/10 text-psy-dark/60 hover:border-psy-green-dark hover:text-psy-green-dark transition-all duration-300">
+                        <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/instagram-logo-instagram-icon-transparent-free-png.png.webp" alt="Instagram" class="w-4 h-4 object-contain">
+                    </a>
+                    
+                    <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" target="_blank" class="bg-psy-dark text-white px-6 py-2.5 rounded-full text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-psy-green-dark transition-colors duration-500 shadow-sm hidden sm:block">
+                        <span data-i18n="btn_book">Κλειστε Ραντεβου</span>
+                    </a>
 
-                    <!-- Mobile Burger -->
-                    <button id="mobile-menu-btn" class="lg:hidden p-2 text-psy-dark opacity-80 hover:opacity-100">
-                        <i data-lucide="menu" class="w-6 h-6"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+                    <!-- Mobile Burger -->
+                    <button id="mobile-menu-btn" class="lg:hidden p-2 text-psy-dark opacity-80 hover:opacity-100">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-psy-base z-[60] transform translate-y-full transition-transform duration-500 flex flex-col items-center justify-center gap-8">
-            <button id="close-mobile-menu" class="absolute top-8 right-8 p-2 text-psy-dark hover:text-psy-green-dark transition-colors">
-                <i data-lucide="x" class="w-8 h-8"></i>
-            </button>
-            
-            <a href="#about" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_bio">Βιογραφικό</a>
-            <a href="#services" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_services">Υπηρεσίες</a>
-            <a href="#gallery" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_gallery">Χώρος</a>
-            <a href="#contact" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_contact">Επικοινωνία</a>
-            <a href="https://www.instagram.com/ioannakarouz_psy/" class="mobile-link font-serif text-xl text-psy-green-dark hover:text-psy-dark transition-colors mt-4">Instagram</a>
-            
-            <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" class="mt-8 bg-psy-green-dark text-white px-8 py-3 rounded-full text-xs font-bold tracking-widest uppercase hover:bg-psy-dark transition-colors" data-i18n="btn_book">
-                Κλειστε Ραντεβου
-            </a>
-        </div>
-    </header>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-psy-base z-[60] transform translate-y-full transition-transform duration-500 flex flex-col items-center justify-center gap-8">
+            <button id="close-mobile-menu" class="absolute top-8 right-8 p-2 text-psy-dark hover:text-psy-green-dark transition-colors">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            
+            <a href="#about" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_bio">Βιογραφικό</a>
+            <a href="#services" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_services">Υπηρεσίες</a>
+            <a href="#gallery" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_gallery">Χώρος</a>
+            <a href="#contact" class="mobile-link font-serif text-3xl text-psy-dark hover:text-psy-green-dark transition-colors" data-i18n="nav_contact">Επικοινωνία</a>
+            <a href="https://www.instagram.com/ioannakarouz_psy/" class="mobile-link font-serif text-xl text-psy-green-dark hover:text-psy-dark transition-colors mt-4">Instagram</a>
+            
+            <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" class="mt-8 bg-psy-green-dark text-white px-8 py-3 rounded-full text-xs font-bold tracking-widest uppercase hover:bg-psy-dark transition-colors" data-i18n="btn_book">
+                Κλειστε Ραντεβου
+            </a>
+        </div>
+    </header>
 
-    <!-- Hero Section -->
-    <main>
-        <section class="relative min-h-screen pt-32 pb-16 overflow-hidden flex flex-col justify-center bg-psy-base">
-            <!-- Subtle Background Elements -->
-            <div class="absolute top-0 right-0 w-1/2 h-full bg-psy-green-light/10 rounded-l-full filter blur-[100px] opacity-40 animate-float pointer-events-none"></div>
-            <div class="absolute bottom-0 left-0 w-1/3 h-2/3 bg-psy-gold/10 rounded-r-full filter blur-[120px] opacity-60 pointer-events-none"></div>
+    <!-- Hero Section -->
+    <main>
+        <section class="relative min-h-screen pt-32 pb-16 overflow-hidden flex flex-col justify-center bg-psy-base">
+            <!-- Subtle Background Elements -->
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-psy-green-light/10 rounded-l-full filter blur-[100px] opacity-40 animate-float pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-1/3 h-2/3 bg-psy-gold/10 rounded-r-full filter blur-[120px] opacity-60 pointer-events-none"></div>
 
-            <div class="container mx-auto px-6 md:px-12 relative z-10 grid lg:grid-cols-12 gap-16 items-center max-w-7xl">
-                
-                <!-- Hero Content -->
-                <div class="lg:col-span-7 flex flex-col gap-8 reveal-on-scroll">
-                    <div class="inline-flex items-center gap-3 text-psy-green-dark font-sans text-[10px] font-bold tracking-[0.25em] uppercase opacity-80">
-                        <span class="w-6 h-[1px] bg-psy-green-dark"></span>
-                        <span data-i18n="hero_eyebrow">European Association for Psychotherapy</span>
-                    </div>
-                    
-                    <!-- Title resized: smaller than before -->
-                    <h1 class="font-serif text-4xl md:text-6xl xl:text-7xl leading-[1.15] text-psy-dark text-balance font-light">
-                        <span data-i18n="hero_title_1">ΣΥΝΟΔΟΙΠΟΡΟΣ ΣΤΟ ΤΑΞΙΔΙ ΤΗΣ</span> <span class="text-gradient-earth italic font-normal" data-i18n="hero_title_2">προσωπικής σου</span> <span data-i18n="hero_title_3">ΑΝΑΠΤΥΞΗΣ.</span>
-                    </h1>
+            <div class="container mx-auto px-6 md:px-12 relative z-10 grid lg:grid-cols-12 gap-16 items-center max-w-7xl">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 flex flex-col gap-8 reveal-on-scroll">
+                    <div class="inline-flex items-center gap-3 text-psy-green-dark font-sans text-[10px] font-bold tracking-[0.25em] uppercase opacity-80">
+                        <span class="w-6 h-[1px] bg-psy-green-dark"></span>
+                        <span data-i18n="hero_eyebrow">European Association for Psychotherapy</span>
+                    </div>
+                    
+                    <!-- Title resized: smaller than before -->
+                    <h1 class="font-serif text-4xl md:text-6xl xl:text-7xl leading-[1.15] text-psy-dark text-balance font-light">
+                        <span data-i18n="hero_title_1">ΣΥΝΟΔΟΙΠΟΡΟΣ ΣΤΟ ΤΑΞΙΔΙ ΤΗΣ</span> <span class="text-gradient-earth italic font-normal" data-i18n="hero_title_2">προσωπικής σου</span> <span data-i18n="hero_title_3">ΑΝΑΠΤΥΞΗΣ.</span>
+                    </h1>
 
-                    <p class="font-sans text-lg text-psy-dark/70 max-w-lg leading-relaxed font-light" data-i18n="hero_subtitle">
-                        Ένα ασφαλές περιβάλλον αποδοχής και ενδυνάμωσης, σχεδιασμένο για να σας βοηθήσει να ανακαλύψετε τις δικές σας απαντήσεις.
-                    </p>
+                    <p class="font-sans text-lg text-psy-dark/70 max-w-lg leading-relaxed font-light" data-i18n="hero_subtitle">
+                        Ένα ασφαλές περιβάλλον αποδοχής και ενδυνάμωσης, σχεδιασμένο για να σας βοηθήσει να ανακαλύψετε τις δικές σας απαντήσεις.
+                    </p>
 
-                    <div class="flex flex-wrap gap-4 pt-6">
-                        <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" target="_blank" class="group px-8 py-4 bg-psy-dark text-white rounded-full flex items-center gap-3 hover:bg-psy-green-dark transition-all duration-500 shadow-soft hover:shadow-lg">
-                            <span class="text-xs font-bold tracking-[0.2em] uppercase" data-i18n="btn_session">Κλειστε Συνεδρια</span>
-                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
-                        </a>
-                        <a href="#about" class="px-8 py-4 bg-transparent border border-psy-dark/10 text-psy-dark/80 rounded-full text-xs font-bold tracking-[0.2em] uppercase hover:bg-psy-sand hover:border-transparent transition-all duration-500">
-                            <span data-i18n="btn_meet_me">Γνωριστε Με</span>
-                        </a>
-                    </div>
-                </div>
+                    <div class="flex flex-wrap gap-4 pt-6">
+                        <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" target="_blank" class="group px-8 py-4 bg-psy-dark text-white rounded-full flex items-center gap-3 hover:bg-psy-green-dark transition-all duration-500 shadow-soft hover:shadow-lg">
+                            <span class="text-xs font-bold tracking-[0.2em] uppercase" data-i18n="btn_session">Κλειστε Συνεδρια</span>
+                            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#about" class="px-8 py-4 bg-transparent border border-psy-dark/10 text-psy-dark/80 rounded-full text-xs font-bold tracking-[0.2em] uppercase hover:bg-psy-sand hover:border-transparent transition-all duration-500">
+                            <span data-i18n="btn_meet_me">Γνωριστε Με</span>
+                        </a>
+                    </div>
+                </div>
 
-                <!-- Hero Image (Artistic & Minimal) -->
-                <div class="lg:col-span-5 relative reveal-on-scroll" style="transition-delay: 0.2s;">
-                    <div class="relative aspect-[4/5] rounded-t-[8rem] rounded-b-[1rem] overflow-hidden">
-                        <div class="absolute inset-0 bg-psy-green-dark/10 mix-blend-overlay z-10"></div>
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d210efd61d054f4719.webp" alt="Abstract Psychology Art" class="w-full h-full object-cover opacity-90 grayscale-[20%] sepia-[10%]">
-                    </div>
-                    <!-- Minimal Quote -->
-                    <div class="absolute -bottom-6 -left-6 glass px-8 py-6 rounded-t-3xl rounded-bl-3xl max-w-xs shadow-soft hidden md:block border-t border-psy-green-light/20">
-                        <p class="font-serif italic text-lg text-psy-dark leading-snug" data-i18n="hero_quote">"Κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <!-- Hero Image (Artistic & Minimal) -->
+                <div class="lg:col-span-5 relative reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="relative aspect-[4/5] rounded-t-[8rem] rounded-b-[1rem] overflow-hidden">
+                        <div class="absolute inset-0 bg-psy-green-dark/10 mix-blend-overlay z-10"></div>
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d210efd61d054f4719.webp" alt="Abstract Psychology Art" class="w-full h-full object-cover opacity-90 grayscale-[20%] sepia-[10%]">
+                    </div>
+                    <!-- Minimal Quote -->
+                    <div class="absolute -bottom-6 -left-6 glass px-8 py-6 rounded-t-3xl rounded-bl-3xl max-w-xs shadow-soft hidden md:block border-t border-psy-green-light/20">
+                        <p class="font-serif italic text-lg text-psy-dark leading-snug" data-i18n="hero_quote">"Κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- About / Bio Section (Moved up) -->
-        <section id="about" class="py-20 bg-psy-base relative border-t border-psy-dark/5">
-            <div class="container mx-auto px-6 md:px-12 max-w-7xl">
-                <div class="flex flex-col lg:flex-row gap-16 items-start">
-                    
-                    <!-- Portrait (Larger Image - 5/12 instead of 4/12) - UPDATED IMAGE -->
-                    <div class="w-full lg:w-5/12 reveal-on-scroll lg:sticky lg:top-32">
-                        <div class="relative overflow-hidden rounded-t-full rounded-b-md shadow-soft aspect-[3/4] border-b-4 border-psy-green-dark/30">
-                            <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/69857e2f1dfc028131b3d81e.jpg" alt="Ioanna Karouzi Portrait" class="w-full h-full object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-1000">
+        <!-- About / Bio Section (Moved up) -->
+        <section id="about" class="py-20 bg-psy-base relative border-t border-psy-dark/5">
+            <div class="container mx-auto px-6 md:px-12 max-w-7xl">
+                <div class="flex flex-col lg:flex-row gap-16 items-start">
+                    
+                    <!-- Portrait (Larger Image - 5/12 instead of 4/12) - UPDATED IMAGE -->
+                    <div class="w-full lg:w-5/12 reveal-on-scroll lg:sticky lg:top-32">
+                        <div class="relative overflow-hidden rounded-t-full rounded-b-md shadow-soft aspect-[3/4] border-b-4 border-psy-green-dark/30">
+                            <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/69857e2f1dfc028131b3d81e.jpg" alt="Ioanna Karouzi Portrait" class="w-full h-full object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-1000">
+                        </div>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="w-full lg:w-7/12 reveal-on-scroll pt-8">
+                        <span class="text-psy-green-dark font-bold tracking-[0.2em] text-[10px] uppercase mb-6 block flex items-center gap-2">
+                            <span class="w-8 h-[1px] bg-psy-green-dark"></span> <span data-i18n="bio_eyebrow">Γνωριστε Με</span>
+                        </span>
+                        <h2 class="font-serif text-4xl md:text-5xl text-psy-dark mb-8 leading-tight font-light">
+                            <span data-i18n="bio_name">ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ</span> <br>
+                            <span class="text-psy-green-light text-2xl md:text-3xl italic" data-i18n="bio_title">Ψυχολόγος – Ψυχοθεραπεύτρια</span>
+                        </h2>
+
+                        <div class="space-y-6 text-psy-dark/70 font-sans text-base md:text-lg leading-loose text-justify relative font-light">
+                            <p data-i18n="bio_p1">
+                                Ονομάζομαι Ιωάννα Καρούζη και είμαι μέλος του <strong>European Association for Psychotherapy (EAP)</strong>. Με έδρα το ιδιωτικό μου γραφείο στον Άγιο Ελευθέριο, αλλά και διαδικτυακά, προσφέρω ένα ασφαλές περιβάλλον αποδοχής.
+                            </p>
+                            <p data-i18n="bio_p2">
+                                Είμαι απόφοιτη του <strong>Τμήματος Ψυχολογίας του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης</strong> και έχω εξειδικευτεί στην <strong>Προσωποκεντρική Προσέγγιση (Person-Centered Approach)</strong> στο ICPS. Η φιλοσοφία μου βασίζεται στη μη κατευθυντική παρεμβατικότητα: πιστεύω βαθιά πως κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις, αρκεί να του δοθεί ο κατάλληλος χώρος και χρόνος.
+                            </p>
+                            <p data-i18n="bio_p3">
+                                Η επαγγελματική μου πορεία είναι πολυδιάστατη. Έχω εργαστεί σε ξενώνες και κέντρα ψυχικής υγείας, παρέχοντας υποστήριξη σε ευάλωτες κοινωνικές ομάδες, πρόσφυγες, καθώς και συμβουλευτική σε παιδιά και οικογένειες. Η εθελοντική μου προσφορά στο «Χαμόγελο του Παιδιού» και στη «Freedom Gate Greece» διαμόρφωσε την ενσυναίσθηση που χαρακτηρίζει κάθε θεραπευτική μου σχέση.
+                            </p>
+                        </div>
+
+                        <div class="mt-12 flex items-center gap-4 opacity-70">
+                            <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6c518ecce2b0417e345.png" alt="Signature Logo" class="w-12 h-12 grayscale sepia">
+                            <p class="font-serif italic text-psy-dark/60 text-base" data-i18n="bio_quote">"Συνεχίζω να επιμορφώνομαι διαρκώς, για να προσφέρω το καλύτερο σε εσάς."</p>
+                        </div>
+
+                        <!-- DoctorAnytime Reviews -->
+                        <div class="mt-8 reveal-on-scroll">
+                            <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna#review-section" target="_blank" class="inline-block hover:opacity-80 transition-opacity duration-300">
+                                <img src="https://raw.githubusercontent.com/agelmet/KAROUZI/refs/heads/main/kar.jpg" alt="DoctorAnytime Reviews" class="h-16 w-auto rounded shadow-sm border border-psy-dark/5">
+                            </a>
                         </div>
-                    </div>
+                    </div>
 
-                    <!-- Text -->
-                    <div class="w-full lg:w-7/12 reveal-on-scroll pt-8">
-                        <span class="text-psy-green-dark font-bold tracking-[0.2em] text-[10px] uppercase mb-6 block flex items-center gap-2">
-                            <span class="w-8 h-[1px] bg-psy-green-dark"></span> <span data-i18n="bio_eyebrow">Γνωριστε Με</span>
-                        </span>
-                        <h2 class="font-serif text-4xl md:text-5xl text-psy-dark mb-8 leading-tight font-light">
-                            <span data-i18n="bio_name">ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ</span> <br>
-                            <span class="text-psy-green-light text-2xl md:text-3xl italic" data-i18n="bio_title">Ψυχολόγος – Ψυχοθεραπεύτρια</span>
-                        </h2>
+                </div>
+            </div>
+        </section>
 
-                        <div class="space-y-6 text-psy-dark/70 font-sans text-base md:text-lg leading-loose text-justify relative font-light">
-                            <p data-i18n="bio_p1">
-                                Ονομάζομαι Ιωάννα Καρούζη και είμαι μέλος του <strong>European Association for Psychotherapy (EAP)</strong>. Με έδρα το ιδιωτικό μου γραφείο στον Άγιο Ελευθέριο, αλλά και διαδικτυακά, προσφέρω ένα ασφαλές περιβάλλον αποδοχής.
-                            </p>
-                            <p data-i18n="bio_p2">
-                                Είμαι απόφοιτη του <strong>Τμήματος Ψυχολογίας του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης</strong> και έχω εξειδικευτεί στην <strong>Προσωποκεντρική Προσέγγιση (Person-Centered Approach)</strong> στο ICPS. Η φιλοσοφία μου βασίζεται στη μη κατευθυντική παρεμβατικότητα: πιστεύω βαθιά πως κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις, αρκεί να του δοθεί ο κατάλληλος χώρος και χρόνος.
-                            </p>
-                            <p data-i18n="bio_p3">
-                                Η επαγγελματική μου πορεία είναι πολυδιάστατη. Έχω εργαστεί σε ξενώνες και κέντρα ψυχικής υγείας, παρέχοντας υποστήριξη σε ευάλωτες κοινωνικές ομάδες, πρόσφυγες, καθώς και συμβουλευτική σε παιδιά και οικογένειες. Η εθελοντική μου προσφορά στο «Χαμόγελο του Παιδιού» και στη «Freedom Gate Greece» διαμόρφωσε την ενσυναίσθηση που χαρακτηρίζει κάθε θεραπευτική μου σχέση.
-                            </p>
-                        </div>
+        <!-- Services Section (Using green accents) -->
+        <section id="services" class="py-20 bg-psy-sand/30 relative overflow-hidden">
+            <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+                    <span class="text-psy-green-dark font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block" data-i18n="services_eyebrow">Τομεις Εξειδικευσης</span>
+                    <h2 class="font-serif text-4xl md:text-5xl text-psy-dark mb-4 font-light" data-i18n="services_title">ΥΠΗΡΕΣΙΕΣ</h2>
+                    <div class="w-16 h-[1px] bg-psy-green-light/60 mx-auto mb-6"></div>
+                    <h3 class="font-serif italic text-2xl md:text-3xl text-psy-green-light mb-6" data-i18n="services_subtitle">Με βάση την Προσωποκεντρική Προσέγγιση</h3>
+                    <p class="text-psy-dark/60 text-base font-light" data-i18n="services_desc">Προσεγγίσεις προσαρμοσμένες στις δικές σας ανάγκες, με απόλυτο σεβασμό.</p>
+                </div>
 
-                        <div class="mt-12 flex items-center gap-4 opacity-70">
-                            <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6c518ecce2b0417e345.png" alt="Signature Logo" class="w-12 h-12 grayscale sepia">
-                            <p class="font-serif italic text-psy-dark/60 text-base" data-i18n="bio_quote">"Συνεχίζω να επιμορφώνομαι διαρκώς, για να προσφέρω το καλύτερο σε εσάς."</p>
-                        </div>
-                    </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="group bg-white p-8 rounded-xl transition-all duration-500 reveal-on-scroll border border-psy-dark/5 hover:border-psy-green-light/50 shadow-sm hover:shadow-card-hover relative">
+                        <!-- Icon uses light green -->
+                        <div class="w-12 h-12 bg-psy-sand rounded-full flex items-center justify-center text-psy-green-light mb-6 group-hover:bg-psy-green-light group-hover:text-white transition-colors">
+                            <i data-lucide="brain" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-medium mb-4 text-psy-dark group-hover:text-psy-green-dark transition-colors" data-i18n="service_1_title">ΑΤΟΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΙΑ & ΔΙΑΧΕΙΡΙΣΗ ΔΙΑΤΑΡΑΧΩΝ</h3>
+                        <p class="text-[10px] font-sans opacity-40 mb-6 tracking-widest uppercase" data-i18n="service_duration">Διαρκεια: 50'</p>
+                        <ul class="space-y-2 text-sm font-sans text-psy-dark/70 font-light">
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l1">Άγχος και Στρες</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l2">Κρίσεις Πανικού</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l3">Ιδεοψυχαναγκαστική Διαταραχή</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l4">Ψυχοσωματικές Διαταραχές</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l5">Αντιμετώπιση Τραύματος</span></li>
+                        </ul>
+                    </div>
 
-                </div>
-            </div>
-        </section>
+                    <!-- Service Card 2 -->
+                    <div class="group bg-white p-8 rounded-xl transition-all duration-500 reveal-on-scroll border border-psy-dark/5 hover:border-psy-green-light/50 shadow-sm hover:shadow-card-hover relative" style="transition-delay: 0.1s;">
+                         <div class="w-12 h-12 bg-psy-sand rounded-full flex items-center justify-center text-psy-green-light mb-6 group-hover:bg-psy-green-light group-hover:text-white transition-colors">
+                            <i data-lucide="sprout" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-medium mb-4 text-psy-dark group-hover:text-psy-green-dark transition-colors" data-i18n="service_2_title">ΣΥΜΒΟΥΛΕΥΤΙΚΗ & ΠΡΟΣΩΠΙΚΗ ΑΝΑΠΤΥΞΗ</h3>
+                        <p class="text-[10px] font-sans opacity-40 mb-6 tracking-widest uppercase" data-i18n="service_duration">Διαρκεια: 50'</p>
+                        <ul class="space-y-2 text-sm font-sans text-psy-dark/70 font-light">
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l1">Ενίσχυση Αυτογνωσίας</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l2">Ανακάλυψη εαυτού</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l3">Διαχείριση Θυμού</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l4">Διαχείριση Πένθους</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l5">Προσαρμογή στην αλλαγή</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l6">Υποστήριξη ΛΟΑΤΚΙ+</span></li>
+                        </ul>
+                    </div>
 
-        <!-- Services Section (Using green accents) -->
-        <section id="services" class="py-20 bg-psy-sand/30 relative overflow-hidden">
-            <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
-                
-                <div class="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
-                    <span class="text-psy-green-dark font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block" data-i18n="services_eyebrow">Τομεις Εξειδικευσης</span>
-                    <h2 class="font-serif text-4xl md:text-5xl text-psy-dark mb-4 font-light" data-i18n="services_title">ΥΠΗΡΕΣΙΕΣ</h2>
-                    <div class="w-16 h-[1px] bg-psy-green-light/60 mx-auto mb-6"></div>
-                    <h3 class="font-serif italic text-2xl md:text-3xl text-psy-green-light mb-6" data-i18n="services_subtitle">Με βάση την Προσωποκεντρική Προσέγγιση</h3>
-                    <p class="text-psy-dark/60 text-base font-light" data-i18n="services_desc">Προσεγγίσεις προσαρμοσμένες στις δικές σας ανάγκες, με απόλυτο σεβασμό.</p>
-                </div>
+                    <!-- Service Card 3 -->
+                    <div class="group bg-white p-8 rounded-xl transition-all duration-500 reveal-on-scroll border border-psy-dark/5 hover:border-psy-green-light/50 shadow-sm hover:shadow-card-hover relative" style="transition-delay: 0.2s;">
+                         <div class="w-12 h-12 bg-psy-sand rounded-full flex items-center justify-center text-psy-green-light mb-6 group-hover:bg-psy-green-light group-hover:text-white transition-colors">
+                            <i data-lucide="laptop" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-serif text-xl font-medium mb-4 text-psy-dark group-hover:text-psy-green-dark transition-colors" data-i18n="service_3_title">ONLINE ΣΥΝΕΔΡΙΕΣ (ΕΞ ΑΠΟΣΤΑΣΕΩΣ)</h3>
+                        <p class="text-[10px] font-sans opacity-40 mb-6 tracking-widest uppercase">Skype / Zoom</p>
+                        <p class="text-sm font-sans text-psy-dark/60 mb-4 font-light" data-i18n="s3_desc">
+                            Ιδανικό για όσους βρίσκονται εκτός Αθηνών ή προτιμούν την ασφάλεια του χώρου τους.
+                        </p>
+                        <ul class="space-y-2 text-sm font-sans text-psy-dark/70 font-light">
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s3_l1">Βιντεοκλήση</span></li>
+                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s3_l2">Πλήρης αποτελεσματικότητα</span></li>
+                        </ul>
+                    </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    
-                    <!-- Service Card 1 -->
-                    <div class="group bg-white p-8 rounded-xl transition-all duration-500 reveal-on-scroll border border-psy-dark/5 hover:border-psy-green-light/50 shadow-sm hover:shadow-card-hover relative">
-                        <!-- Icon uses light green -->
-                        <div class="w-12 h-12 bg-psy-sand rounded-full flex items-center justify-center text-psy-green-light mb-6 group-hover:bg-psy-green-light group-hover:text-white transition-colors">
-                            <i data-lucide="brain" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="font-serif text-xl font-medium mb-4 text-psy-dark group-hover:text-psy-green-dark transition-colors" data-i18n="service_1_title">ΑΤΟΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΙΑ & ΔΙΑΧΕΙΡΙΣΗ ΔΙΑΤΑΡΑΧΩΝ</h3>
-                        <p class="text-[10px] font-sans opacity-40 mb-6 tracking-widest uppercase" data-i18n="service_duration">Διαρκεια: 50'</p>
-                        <ul class="space-y-2 text-sm font-sans text-psy-dark/70 font-light">
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l1">Άγχος και Στρες</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l2">Κρίσεις Πανικού</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l3">Ιδεοψυχαναγκαστική Διαταραχή</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l4">Ψυχοσωματικές Διαταραχές</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s1_l5">Αντιμετώπιση Τραύματος</span></li>
-                        </ul>
-                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Service Card 2 -->
-                    <div class="group bg-white p-8 rounded-xl transition-all duration-500 reveal-on-scroll border border-psy-dark/5 hover:border-psy-green-light/50 shadow-sm hover:shadow-card-hover relative" style="transition-delay: 0.1s;">
-                         <div class="w-12 h-12 bg-psy-sand rounded-full flex items-center justify-center text-psy-green-light mb-6 group-hover:bg-psy-green-light group-hover:text-white transition-colors">
-                            <i data-lucide="sprout" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="font-serif text-xl font-medium mb-4 text-psy-dark group-hover:text-psy-green-dark transition-colors" data-i18n="service_2_title">ΣΥΜΒΟΥΛΕΥΤΙΚΗ & ΠΡΟΣΩΠΙΚΗ ΑΝΑΠΤΥΞΗ</h3>
-                        <p class="text-[10px] font-sans opacity-40 mb-6 tracking-widest uppercase" data-i18n="service_duration">Διαρκεια: 50'</p>
-                        <ul class="space-y-2 text-sm font-sans text-psy-dark/70 font-light">
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l1">Ενίσχυση Αυτογνωσίας</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l2">Ανακάλυψη εαυτού</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l3">Διαχείριση Θυμού</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l4">Διαχείριση Πένθους</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l5">Προσαρμογή στην αλλαγή</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s2_l6">Υποστήριξη ΛΟΑΤΚΙ+</span></li>
-                        </ul>
-                    </div>
+        <!-- Stats / Trust Ticker (Moved Here & Styled with Dark Green #7b8d14) -->
+        <div class="w-full bg-psy-green-dark text-white py-16">
+            <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20 max-w-6xl">
+                <div class="reveal-on-scroll">
+                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">100%</span>
+                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_1">Εξατομικευμενη Φροντιδα</span>
+                </div>
+                <div class="reveal-on-scroll" style="transition-delay: 0.1s;">
+                    <!-- UPDATED STAT 2 -->
+                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">8+</span>
+                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_2">ΧΡΟΝΙΑ ΕΜΠΕΙΡΙΑΣ</span>
+                </div>
+                <div class="reveal-on-scroll" style="transition-delay: 0.2s;">
+                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">5+</span>
+                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_3">Διαφορετικες Υπηρεσιες</span>
+                </div>
+                <div class="reveal-on-scroll" style="transition-delay: 0.3s;">
+                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">EAP</span>
+                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_4">Πιστοποιημενο Μελος</span>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Service Card 3 -->
-                    <div class="group bg-white p-8 rounded-xl transition-all duration-500 reveal-on-scroll border border-psy-dark/5 hover:border-psy-green-light/50 shadow-sm hover:shadow-card-hover relative" style="transition-delay: 0.2s;">
-                         <div class="w-12 h-12 bg-psy-sand rounded-full flex items-center justify-center text-psy-green-light mb-6 group-hover:bg-psy-green-light group-hover:text-white transition-colors">
-                            <i data-lucide="laptop" class="w-5 h-5"></i>
-                        </div>
-                        <h3 class="font-serif text-xl font-medium mb-4 text-psy-dark group-hover:text-psy-green-dark transition-colors" data-i18n="service_3_title">ONLINE ΣΥΝΕΔΡΙΕΣ (ΕΞ ΑΠΟΣΤΑΣΕΩΣ)</h3>
-                        <p class="text-[10px] font-sans opacity-40 mb-6 tracking-widest uppercase">Skype / Zoom</p>
-                        <p class="text-sm font-sans text-psy-dark/60 mb-4 font-light" data-i18n="s3_desc">
-                            Ιδανικό για όσους βρίσκονται εκτός Αθηνών ή προτιμούν την ασφάλεια του χώρου τους.
-                        </p>
-                        <ul class="space-y-2 text-sm font-sans text-psy-dark/70 font-light">
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s3_l1">Βιντεοκλήση</span></li>
-                            <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-psy-green-light rounded-full"></span> <span data-i18n="s3_l2">Πλήρης αποτελεσματικότητα</span></li>
-                        </ul>
-                    </div>
+        <!-- Unified Gallery Grid -->
+        <section id="gallery" class="py-20 bg-psy-base relative">
+             <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
+                
+                <div class="text-center mb-12 reveal-on-scroll">
+                     <span class="text-psy-green-light font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block" data-i18n="gallery_eyebrow">Ο ΧΩΡΟΣ & Η ΕΜΠΝΕΥΣΗ</span>
+                     <h2 class="font-serif text-3xl md:text-4xl text-psy-dark font-light" data-i18n="gallery_title">ΣΤΙΓΜΕΣ & ΣΚΕΨΕΙΣ</h2>
+                </div>
 
-                </div>
-            </div>
-        </section>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <!-- Image 1 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d2abac3fc9b87c1d66.webp" alt="Inspiration 1" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-        <!-- Stats / Trust Ticker (Moved Here & Styled with Dark Green #7b8d14) -->
-        <div class="w-full bg-psy-green-dark text-white py-16">
-            <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20 max-w-6xl">
-                <div class="reveal-on-scroll">
-                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">100%</span>
-                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_1">Εξατομικευμενη Φροντιδα</span>
-                </div>
-                <div class="reveal-on-scroll" style="transition-delay: 0.1s;">
-                    <!-- UPDATED STAT 2 -->
-                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">8+</span>
-                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_2">ΧΡΟΝΙΑ ΕΜΠΕΙΡΙΑΣ</span>
-                </div>
-                <div class="reveal-on-scroll" style="transition-delay: 0.2s;">
-                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">5+</span>
-                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_3">Διαφορετικες Υπηρεσιες</span>
-                </div>
-                <div class="reveal-on-scroll" style="transition-delay: 0.3s;">
-                    <span class="block text-4xl md:text-5xl font-serif text-white mb-2">EAP</span>
-                    <span class="text-[9px] font-sans tracking-[0.2em] uppercase opacity-70" data-i18n="stat_4">Πιστοποιημενο Μελος</span>
-                </div>
-            </div>
-        </div>
+                    <!-- Image 2 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.05s;">
+                         <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d2f7a87767623fb069.jpg" alt="Inspiration 2" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-        <!-- Unified Gallery Grid -->
-        <section id="gallery" class="py-20 bg-psy-base relative">
-             <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
-                
-                <div class="text-center mb-12 reveal-on-scroll">
-                     <span class="text-psy-green-light font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block" data-i18n="gallery_eyebrow">Ο ΧΩΡΟΣ & Η ΕΜΠΝΕΥΣΗ</span>
-                     <h2 class="font-serif text-3xl md:text-4xl text-psy-dark font-light" data-i18n="gallery_title">ΣΤΙΓΜΕΣ & ΣΚΕΨΕΙΣ</h2>
-                </div>
+                    <!-- Image 3 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.1s;">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d257e1943ea93ee4d9.jpg" alt="Inspiration 3" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <!-- Image 1 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d2abac3fc9b87c1d66.webp" alt="Inspiration 1" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+                    <!-- Image 4 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.15s;">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d210efd664354f4717.jpg" alt="Inspiration 4" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
+                    
+                    <!-- Quote 1 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.2s;">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d21fd827f44ab13e5c.jpg" alt="Quote 1" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-                    <!-- Image 2 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.05s;">
-                         <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d2f7a87767623fb069.jpg" alt="Inspiration 2" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+                    <!-- Quote 2 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.25s;">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d2f7a87757133fb06e.jpg" alt="Quote 2" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-                    <!-- Image 3 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.1s;">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d257e1943ea93ee4d9.jpg" alt="Inspiration 3" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+                    <!-- Quote 3 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.3s;">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d210efd600544f4718.jpg" alt="Quote 3" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-                    <!-- Image 4 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.15s;">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d210efd664354f4717.jpg" alt="Inspiration 4" class="w-full h-full object-contain block opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
-                    
-                    <!-- Quote 1 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.2s;">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d21fd827f44ab13e5c.jpg" alt="Quote 1" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+                    <!-- Quote 4 -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.35s;">
+                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d21311f663f5b5bb7a.jpg" alt="Quote 4" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-                    <!-- Quote 2 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.25s;">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d2f7a87757133fb06e.jpg" alt="Quote 2" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+                    <!-- Parallax 2 Image -->
+                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.4s;">
+                         <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d218ecce5ded17e45e.jpg" alt="Parallax Image" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700">
+                    </div>
 
-                    <!-- Quote 3 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.3s;">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d210efd600544f4718.jpg" alt="Quote 3" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+                     <!-- Logo filler -->
+                     <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-psy-sand p-8 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.45s;">
+                         <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6c518ecce2b0417e345.png" alt="Logo" class="w-full h-full object-contain opacity-60">
+                    </div>
 
-                    <!-- Quote 4 -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.35s;">
-                        <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d21311f663f5b5bb7a.jpg" alt="Quote 4" class="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Parallax 2 Image -->
-                    <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-white p-2 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.4s;">
-                         <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6d218ecce5ded17e45e.jpg" alt="Parallax Image" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-700">
-                    </div>
+        <!-- CTA & Contact (Warm Earthy) -->
+        <section id="contact" class="py-20 relative overflow-hidden text-white bg-psy-accent">
+             <!-- Minimal Texture -->
+             <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
 
-                     <!-- Logo filler -->
-                     <div class="aspect-square relative overflow-hidden rounded-lg shadow-sm border border-psy-dark/5 bg-psy-sand p-8 reveal-on-scroll flex items-center justify-center hover:scale-[1.02] transition-transform duration-500" style="transition-delay: 0.45s;">
-                         <img src="https://assets.cdn.filesafe.space/61icdoMiJ2pHklO6mmKW/media/6980a6c518ecce2b0417e345.png" alt="Logo" class="w-full h-full object-contain opacity-60">
-                    </div>
+             <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
+                 <div class="flex flex-col lg:flex-row gap-16 items-center">
+                     <div class="w-full lg:w-1/2 reveal-on-scroll text-center lg:text-left">
+                         <div class="inline-block px-4 py-2 border border-white/20 rounded-full text-[10px] font-bold tracking-[0.25em] mb-6" data-i18n="contact_eyebrow">
+                             ΕΠΙΚΟΙΝΩΝΙΑ
+                         </div>
+                         <h2 class="font-serif text-5xl md:text-6xl mb-6 leading-[1.1] font-light">
+                             <span data-i18n="contact_title_1">ΞΕΚΙΝΗΣΤΕ ΤΟ</span> <br> <span data-i18n="contact_title_2">ΤΑΞΙΔΙ ΣΑΣ</span>
+                         </h2>
+                         <p class="text-white/80 text-lg mb-10 font-sans max-w-md mx-auto lg:mx-0 leading-relaxed font-light" data-i18n="contact_desc">
+                             Επικοινωνήστε μαζί μου για να προγραμματίσουμε την πρώτη μας συνάντηση, δια ζώσης ή διαδικτυακά.
+                         </p>
+                         <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" target="_blank" class="inline-flex items-center gap-4 bg-white text-psy-accent px-10 py-4 rounded-full text-xs font-bold tracking-[0.2em] uppercase hover:bg-psy-sand transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                            <span data-i18n="btn_book">Κλειστε Ραντεβου</span> <i data-lucide="calendar" class="w-4 h-4"></i>
+                         </a>
+                     </div>
 
-                </div>
-            </div>
-        </section>
+                     <div class="w-full lg:w-1/2 reveal-on-scroll mt-8 lg:mt-0" style="transition-delay: 0.2s;">
+                         <div class="bg-white/10 backdrop-blur-md p-10 rounded-[2rem] border border-white/10 shadow-lg">
+                             <div class="space-y-8">
+                                <div class="flex items-start gap-6">
+                                    <i data-lucide="map-pin" class="w-6 h-6 text-white/70 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-serif text-xl mb-1 text-white" data-i18n="contact_addr_title">Διεύθυνση</h4>
+                                        <a href="https://maps.google.com/?q=Γλαράκη+10,+Άγιος+Ελευθέριος,+Αττική" target="_blank" class="text-white/60 hover:text-white transition-colors font-sans font-light" data-i18n="contact_addr_val">
+                                            Γλαράκη 10, Άγιος Ελευθέριος, Αττική
+                                        </a>
+                                    </div>
+                                </div>
 
-        <!-- CTA & Contact (Warm Earthy) -->
-        <section id="contact" class="py-20 relative overflow-hidden text-white bg-psy-accent">
-             <!-- Minimal Texture -->
-             <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+                                <div class="flex items-start gap-6">
+                                    <i data-lucide="phone" class="w-6 h-6 text-white/70 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-serif text-xl mb-1 text-white" data-i18n="contact_phone_title">Τηλέφωνο</h4>
+                                        <!-- UPDATED PHONE -->
+                                        <a href="tel:2107117154" class="text-white/60 hover:text-white transition-colors font-sans font-light">
+                                            21 0711 7154
+                                        </a>
+                                    </div>
+                                </div>
 
-             <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
-                 <div class="flex flex-col lg:flex-row gap-16 items-center">
-                     <div class="w-full lg:w-1/2 reveal-on-scroll text-center lg:text-left">
-                         <div class="inline-block px-4 py-2 border border-white/20 rounded-full text-[10px] font-bold tracking-[0.25em] mb-6" data-i18n="contact_eyebrow">
-                             ΕΠΙΚΟΙΝΩΝΙΑ
-                         </div>
-                         <h2 class="font-serif text-5xl md:text-6xl mb-6 leading-[1.1] font-light">
-                             <span data-i18n="contact_title_1">ΞΕΚΙΝΗΣΤΕ ΤΟ</span> <br> <span data-i18n="contact_title_2">ΤΑΞΙΔΙ ΣΑΣ</span>
-                         </h2>
-                         <p class="text-white/80 text-lg mb-10 font-sans max-w-md mx-auto lg:mx-0 leading-relaxed font-light" data-i18n="contact_desc">
-                             Επικοινωνήστε μαζί μου για να προγραμματίσουμε την πρώτη μας συνάντηση, δια ζώσης ή διαδικτυακά.
-                         </p>
-                         <a href="https://www.doctoranytime.gr/d/Psychologos/karouzi-ioanna" target="_blank" class="inline-flex items-center gap-4 bg-white text-psy-accent px-10 py-4 rounded-full text-xs font-bold tracking-[0.2em] uppercase hover:bg-psy-sand transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
-                            <span data-i18n="btn_book">Κλειστε Ραντεβου</span> <i data-lucide="calendar" class="w-4 h-4"></i>
-                         </a>
-                     </div>
+                                <div class="flex items-start gap-6">
+                                    <i data-lucide="clock" class="w-6 h-6 text-white/70 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-serif text-xl mb-1 text-white" data-i18n="contact_hours_title">Ωράριο</h4>
+                                        <p class="text-white/60 font-sans font-light text-sm">
+                                            <span data-i18n="contact_hours_days">Δευτέρα - Παρασκευή</span><br>
+                                            <span class="opacity-70 text-xs" data-i18n="contact_hours_note">Κατόπιν Ραντεβού</span>
+                                        </p>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </section>
+    </main>
 
-                     <div class="w-full lg:w-1/2 reveal-on-scroll mt-8 lg:mt-0" style="transition-delay: 0.2s;">
-                         <div class="bg-white/10 backdrop-blur-md p-10 rounded-[2rem] border border-white/10 shadow-lg">
-                             <div class="space-y-8">
-                                <div class="flex items-start gap-6">
-                                    <i data-lucide="map-pin" class="w-6 h-6 text-white/70 mt-1"></i>
-                                    <div>
-                                        <h4 class="font-serif text-xl mb-1 text-white" data-i18n="contact_addr_title">Διεύθυνση</h4>
-                                        <a href="https://maps.google.com/?q=Γλαράκη+10,+Άγιος+Ελευθέριος,+Αττική" target="_blank" class="text-white/60 hover:text-white transition-colors font-sans font-light" data-i18n="contact_addr_val">
-                                            Γλαράκη 10, Άγιος Ελευθέριος, Αττική
-                                        </a>
-                                    </div>
-                                </div>
+    <!-- Footer (Minimal Earthly) -->
+    <footer class="bg-psy-dark text-white/90 pt-16 pb-8 border-t border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-12">
+                <!-- Logo Footer -->
+                <div class="text-left max-w-sm">
+                    <h3 class="font-serif text-2xl tracking-wide text-white" data-i18n="footer_name">ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ</h3>
+                    <p class="text-[10px] font-sans tracking-[0.25em] text-white/50 uppercase mt-2 mb-4" data-i18n="footer_role">Ψυχολογος - Ψυχοθεραπευτρια</p>
+                    <p class="text-white/40 text-sm font-sans leading-relaxed font-light" data-i18n="footer_desc">
+                        Ένα ταξίδι αυτογνωσίας και ενδυνάμωσης με σεβασμό στη μοναδικότητα του κάθε ανθρώπου.
+                    </p>
+                </div>
+                
+                <!-- Socials & Links -->
+                <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start md:items-center">
+                    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 text-xs tracking-[0.15em] text-white/50 font-sans uppercase">
+                        <a href="#about" class="hover:text-psy-green-light transition-colors" data-i18n="nav_bio">Βιογραφικο</a>
+                        <a href="#services" class="hover:text-psy-green-light transition-colors" data-i18n="nav_services">Υπηρεσιες</a>
+                        <a href="#contact" class="hover:text-psy-green-light transition-colors" data-i18n="nav_contact">Επικοινωνια</a>
+                    </nav>
 
-                                <div class="flex items-start gap-6">
-                                    <i data-lucide="phone" class="w-6 h-6 text-white/70 mt-1"></i>
-                                    <div>
-                                        <h4 class="font-serif text-xl mb-1 text-white" data-i18n="contact_phone_title">Τηλέφωνο</h4>
-                                        <!-- UPDATED PHONE -->
-                                        <a href="tel:2107117154" class="text-white/60 hover:text-white transition-colors font-sans font-light">
-                                            21 0711 7154
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/ioannakarouz_psy/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-psy-green-light hover:text-white transition-all duration-300">
+                            <img src="https://raw.githubusercontent.com/agelmet/Image-hosting-/refs/heads/main/instagram-logo-instagram-icon-transparent-free-png.png.webp" alt="Instagram" class="w-4 h-4 object-contain">
+                        </a>
+                        <!-- UPDATED PHONE -->
+                        <a href="tel:2107117154" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-psy-green-light hover:text-white transition-all duration-300">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-                                <div class="flex items-start gap-6">
-                                    <i data-lucide="clock" class="w-6 h-6 text-white/70 mt-1"></i>
-                                    <div>
-                                        <h4 class="font-serif text-xl mb-1 text-white" data-i18n="contact_hours_title">Ωράριο</h4>
-                                        <p class="text-white/60 font-sans font-light text-sm">
-                                            <span data-i18n="contact_hours_days">Δευτέρα - Παρασκευή</span><br>
-                                            <span class="opacity-70 text-xs" data-i18n="contact_hours_note">Κατόπιν Ραντεβού</span>
-                                        </p>
-                                    </div>
-                                </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-        </section>
-    </main>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase text-white/30 font-sans tracking-widest">
+                <p>&copy; <span id="year"></span> IOANNA KAROUZI. ALL RIGHTS RESERVED.</p>
+                <a href="https://advonmedia.com" target="_blank" class="hover:text-white transition-colors mt-4 md:mt-0 flex items-center gap-2">
+                    DESIGNED BY ADVON MEDIA <span class="w-1 h-1 bg-psy-green-light rounded-full"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
 
-    <!-- Footer (Minimal Earthly) -->
-    <footer class="bg-psy-dark text-white/90 pt-16 pb-8 border-t border-white/5 relative overflow-hidden">
-        <div class="container mx-auto px-6 md:px-12 relative z-10 max-w-6xl">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-12">
-                <!-- Logo Footer -->
-                <div class="text-left max-w-sm">
-                    <h3 class="font-serif text-2xl tracking-wide text-white" data-i18n="footer_name">ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ</h3>
-                    <p class="text-[10px] font-sans tracking-[0.25em] text-white/50 uppercase mt-2 mb-4" data-i18n="footer_role">Ψυχολογος - Ψυχοθεραπευτρια</p>
-                    <p class="text-white/40 text-sm font-sans leading-relaxed font-light" data-i18n="footer_desc">
-                        Ένα ταξίδι αυτογνωσίας και ενδυνάμωσης με σεβασμό στη μοναδικότητα του κάθε ανθρώπου.
-                    </p>
-                </div>
-                
-                <!-- Socials & Links -->
-                <div class="flex flex-col md:flex-row gap-10 md:gap-16 items-start md:items-center">
-                    <nav class="flex flex-col md:flex-row gap-6 md:gap-8 text-xs tracking-[0.15em] text-white/50 font-sans uppercase">
-                        <a href="#about" class="hover:text-psy-green-light transition-colors" data-i18n="nav_bio">Βιογραφικο</a>
-                        <a href="#services" class="hover:text-psy-green-light transition-colors" data-i18n="nav_services">Υπηρεσιες</a>
-                        <a href="#contact" class="hover:text-psy-green-light transition-colors" data-i18n="nav_contact">Επικοινωνια</a>
-                    </nav>
+    <!-- Interactive Scripts -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
 
-                    <div class="flex gap-4">
-                        <a href="https://www.instagram.com/ioannakarouz_psy/" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-psy-green-light hover:text-white transition-all duration-300">
-                            <i data-lucide="instagram" class="w-4 h-4"></i>
-                        </a>
-                        <!-- UPDATED PHONE -->
-                        <a href="tel:2107117154" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-psy-green-light hover:text-white transition-all duration-300">
-                            <i data-lucide="phone" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        // Update Year
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase text-white/30 font-sans tracking-widest">
-                <p>&copy; <span id="year"></span> IOANNA KAROUZI. ALL RIGHTS RESERVED.</p>
-                <a href="https://advonmedia.com" target="_blank" class="hover:text-white transition-colors mt-4 md:mt-0 flex items-center gap-2">
-                    DESIGNED BY ADVON MEDIA <span class="w-1 h-1 bg-psy-green-light rounded-full"></span>
-                </a>
-            </div>
-        </div>
-    </footer>
+        // Translation Data
+        const translations = {
+            el: {
+                logo_name: "ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ",
+                logo_sub: "ΨΥΧΟΛΟΓΟΣ - ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ",
+                nav_bio: "Βιογραφικο",
+                nav_services: "Υπηρεσιες",
+                nav_gallery: "Χωρος",
+                nav_contact: "Επικοινωνια",
+                btn_book: "Κλειστε Ραντεβου",
+                hero_eyebrow: "European Association for Psychotherapy",
+                hero_title_1: "ΣΥΝΟΔΟΙΠΟΡΟΣ ΣΤΟ ΤΑΞΙΔΙ ΤΗΣ",
+                hero_title_2: "προσωπικής σου",
+                hero_title_3: "ΑΝΑΠΤΥΞΗΣ.",
+                hero_subtitle: "Ένα ασφαλές περιβάλλον αποδοχής και ενδυνάμωσης, σχεδιασμένο για να σας βοηθήσει να ανακαλύψετε τις δικές σας απαντήσεις.",
+                btn_session: "Κλειστε Συνεδρια",
+                btn_meet_me: "Γνωριστε Με",
+                hero_quote: "\"Κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις.\"",
+                stat_1: "Εξατομικευμενη Φροντιδα",
+                stat_2: "ΧΡΟΝΙΑ ΕΜΠΕΙΡΙΑΣ",
+                stat_3: "Διαφορετικες Υπηρεσιες",
+                stat_4: "Πιστοποιημενο Μελος",
+                bio_eyebrow: "Γνωριστε Με",
+                bio_name: "ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ",
+                bio_title: "Ψυχολόγος – Ψυχοθεραπεύτρια",
+                bio_p1: "Ονομάζομαι Ιωάννα Καρούζη και είμαι μέλος του <strong>European Association for Psychotherapy (EAP)</strong>. Με έδρα το ιδιωτικό μου γραφείο στον Άγιο Ελευθέριο, αλλά και διαδικτυακά, προσφέρω ένα ασφαλές περιβάλλον αποδοχής.",
+                bio_p2: "Είμαι απόφοιτη του <strong>Τμήματος Ψυχολογίας του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης</strong> και έχω εξειδικευτεί στην <strong>Προσωποκεντρική Προσέγγιση (Person-Centered Approach)</strong> στο ICPS. Η φιλοσοφία μου βασίζεται στη μη κατευθυντική παρεμβατικότητα: πιστεύω βαθιά πως κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις, αρκεί να του δοθεί ο κατάλληλος χώρος και χρόνος.",
+                bio_p3: "Η επαγγελματική μου πορεία είναι πολυδιάστατη. Έχω εργαστεί σε ξενώνες και κέντρα ψυχικής υγείας, παρέχοντας υποστήριξη σε ευάλωτες κοινωνικές ομάδες, πρόσφυγες, καθώς και συμβουλευτική σε παιδιά και οικογένειες. Η εθελοντική μου προσφορά στο «Χαμόγελο του Παιδιού» και στη «Freedom Gate Greece» διαμόρφωσε την ενσυναίσθηση που χαρακτηρίζει κάθε θεραπευτική μου σχέση.",
+                bio_quote: "\"Συνεχίζω να επιμορφώνομαι διαρκώς, για να προσφέρω το καλύτερο σε εσάς.\"",
+                services_eyebrow: "Τομεις Εξειδικευσης",
+                services_title: "ΥΠΗΡΕΣΙΕΣ",
+                services_subtitle: "Με βάση την Προσωποκεντρική Προσέγγιση",
+                services_desc: "Προσεγγίσεις προσαρμοσμένες στις δικές σας ανάγκες, με απόλυτο σεβασμό.",
+                service_1_title: "ΑΤΟΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΙΑ & ΔΙΑΧΕΙΡΙΣΗ ΔΙΑΤΑΡΑΧΩΝ",
+                service_duration: "Διαρκεια: 50'",
+                s1_l1: "Άγχος και Στρες",
+                s1_l2: "Κρίσεις Πανικού",
+                s1_l3: "Ιδεοψυχαναγκαστική Διαταραχή",
+                s1_l4: "Ψυχοσωματικές Διαταραχές",
+                s1_l5: "Αντιμετώπιση Τραύματος",
+                service_2_title: "ΣΥΜΒΟΥΛΕΥΤΙΚΗ & ΠΡΟΣΩΠΙΚΗ ΑΝΑΠΤΥΞΗ",
+                s2_l1: "Ενίσχυση Αυτογνωσίας",
+                s2_l2: "Ανακάλυψη εαυτού",
+                s2_l3: "Διαχείριση Θυμού",
+                s2_l4: "Διαχείριση Πένθους",
+                s2_l5: "Προσαρμογή στην αλλαγή",
+                s2_l6: "Υποστήριξη ΛΟΑΤΚΙ+",
+                service_3_title: "ONLINE ΣΥΝΕΔΡΙΕΣ (ΕΞ ΑΠΟΣΤΑΣΕΩΣ)",
+                s3_desc: "Ιδανικό για όσους βρίσκονται εκτός Αθηνών ή προτιμούν την ασφάλεια του χώρου τους.",
+                s3_l1: "Βιντεοκλήση",
+                s3_l2: "Πλήρης αποτελεσματικότητα",
+                gallery_eyebrow: "Ο ΧΩΡΟΣ & Η ΕΜΠΝΕΥΣΗ",
+                gallery_title: "ΣΤΙΓΜΕΣ & ΣΚΕΨΕΙΣ",
+                contact_eyebrow: "ΕΠΙΚΟΙΝΩΝΙΑ",
+                contact_title_1: "ΞΕΚΙΝΗΣΤΕ ΤΟ",
+                contact_title_2: "ΤΑΞΙΔΙ ΣΑΣ",
+                contact_desc: "Επικοινωνήστε μαζί μου για να προγραμματίσουμε την πρώτη μας συνάντηση, δια ζώσης ή διαδικτυακά.",
+                contact_addr_title: "Διεύθυνση",
+                contact_addr_val: "Γλαράκη 10, Άγιος Ελευθέριος, Αττική",
+                contact_phone_title: "Τηλέφωνο",
+                contact_hours_title: "Ωράριο",
+                contact_hours_days: "Δευτέρα - Παρασκευή",
+                contact_hours_note: "Κατόπιν Ραντεβού",
+                footer_name: "ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ",
+                footer_role: "ΨΥΧΟΛΟΓΟΣ - ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ",
+                footer_desc: "Ένα ταξίδι αυτογνωσίας και ενδυνάμωσης με σεβασμό στη μοναδικότητα του κάθε ανθρώπου."
+            },
+            en: {
+                logo_name: "IOANNA KAROUZI",
+                logo_sub: "PSYCHOLOGIST - PSYCHOTHERAPIST",
+                nav_bio: "Biography",
+                nav_services: "Services",
+                nav_gallery: "Gallery",
+                nav_contact: "Contact",
+                btn_book: "Book Appointment",
+                hero_eyebrow: "European Association for Psychotherapy",
+                hero_title_1: "COMPANION ON THE JOURNEY OF",
+                hero_title_2: "your personal",
+                hero_title_3: "GROWTH.",
+                hero_subtitle: "A safe environment of acceptance and empowerment, designed to help you discover your own answers.",
+                btn_session: "Book A Session",
+                btn_meet_me: "Meet Me",
+                hero_quote: "\"Every person has the power to find their own answers.\"",
+                stat_1: "Personalized Care",
+                stat_2: "YEARS OF EXPERIENCE",
+                stat_3: "Different Services",
+                stat_4: "Certified Member",
+                bio_eyebrow: "Meet Me",
+                bio_name: "IOANNA KAROUZI",
+                bio_title: "Psychologist – Psychotherapist",
+                bio_p1: "My name is Ioanna Karouzi and I am a member of the <strong>European Association for Psychotherapy (EAP)</strong>. Based in my private office in Agios Eleftherios, as well as online, I offer a safe environment of acceptance.",
+                bio_p2: "I am a graduate of the <strong>Department of Psychology at the Aristotle University of Thessaloniki</strong> and I have specialized in the <strong>Person-Centered Approach</strong> at ICPS. My philosophy is based on non-directive intervention: I deeply believe that every person has the power to find their own answers, provided they are given the appropriate space and time.",
+                bio_p3: "My professional path is multidimensional. I have worked in shelters and mental health centers, providing support to vulnerable social groups, refugees, as well as counseling to children and families. My voluntary contribution to \"The Smile of the Child\" and \"Freedom Gate Greece\" shaped the empathy that characterizes every therapeutic relationship.",
+                bio_quote: "\"I continue to educate myself constantly, to offer the best to you.\"",
+                services_eyebrow: "Areas of Expertise",
+                services_title: "SERVICES",
+                services_subtitle: "Based on the Person-Centered Approach",
+                services_desc: "Approaches tailored to your needs, with absolute respect.",
+                service_1_title: "INDIVIDUAL PSYCHOTHERAPY & DISORDER MANAGEMENT",
+                service_duration: "Duration: 50'",
+                s1_l1: "Anxiety and Stress",
+                s1_l2: "Panic Attacks",
+                s1_l3: "Obsessive-Compulsive Disorder",
+                s1_l4: "Psychosomatic Disorders",
+                s1_l5: "Trauma Treatment",
+                service_2_title: "COUNSELING & PERSONAL DEVELOPMENT",
+                s2_l1: "Enhancing Self-Awareness",
+                s2_l2: "Self-Discovery",
+                s2_l3: "Anger Management",
+                s2_l4: "Grief Management",
+                s2_l5: "Adapting to Change",
+                s2_l6: "LGBTQ+ Support",
+                service_3_title: "ONLINE SESSIONS (REMOTE)",
+                s3_desc: "Ideal for those outside Athens or who prefer the safety of their own space.",
+                s3_l1: "Video Call",
+                s3_l2: "Full Effectiveness",
+                gallery_eyebrow: "SPACE & INSPIRATION",
+                gallery_title: "MOMENTS & THOUGHTS",
+                contact_eyebrow: "CONTACT",
+                contact_title_1: "START YOUR",
+                contact_title_2: "JOURNEY",
+                contact_desc: "Contact me to schedule our first meeting, in person or online.",
+                contact_addr_title: "Address",
+                contact_addr_val: "Glaraki 10, Agios Eleftherios, Attica",
+                contact_phone_title: "Phone",
+                contact_hours_title: "Hours",
+                contact_hours_days: "Monday - Friday",
+                contact_hours_note: "By Appointment",
+                footer_name: "IOANNA KAROUZI",
+                footer_role: "PSYCHOLOGIST - PSYCHOTHERAPIST",
+                footer_desc: "A journey of self-awareness and empowerment with respect for the uniqueness of every person."
+            }
+        };
 
-    <!-- Interactive Scripts -->
-    <script>
-        // Initialize Icons
-        lucide.createIcons();
+        // Language Logic
+        let currentLang = 'el';
+        const langBtn = document.getElementById('lang-btn');
 
-        // Update Year
-        document.getElementById('year').textContent = new Date().getFullYear();
+        function updateContent() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[currentLang][key]) {
+                    el.innerHTML = translations[currentLang][key]; // Use innerHTML to preserve <strong> tags
+                }
+            });
+            langBtn.textContent = currentLang === 'el' ? 'EN' : 'EL';
+        }
 
-        // Translation Data
-        const translations = {
-            el: {
-                logo_name: "ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ",
-                logo_sub: "ΨΥΧΟΛΟΓΟΣ - ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ",
-                nav_bio: "Βιογραφικο",
-                nav_services: "Υπηρεσιες",
-                nav_gallery: "Χωρος",
-                nav_contact: "Επικοινωνια",
-                btn_book: "Κλειστε Ραντεβου",
-                hero_eyebrow: "European Association for Psychotherapy",
-                hero_title_1: "ΣΥΝΟΔΟΙΠΟΡΟΣ ΣΤΟ ΤΑΞΙΔΙ ΤΗΣ",
-                hero_title_2: "προσωπικής σου",
-                hero_title_3: "ΑΝΑΠΤΥΞΗΣ.",
-                hero_subtitle: "Ένα ασφαλές περιβάλλον αποδοχής και ενδυνάμωσης, σχεδιασμένο για να σας βοηθήσει να ανακαλύψετε τις δικές σας απαντήσεις.",
-                btn_session: "Κλειστε Συνεδρια",
-                btn_meet_me: "Γνωριστε Με",
-                hero_quote: "\"Κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις.\"",
-                stat_1: "Εξατομικευμενη Φροντιδα",
-                stat_2: "ΧΡΟΝΙΑ ΕΜΠΕΙΡΙΑΣ",
-                stat_3: "Διαφορετικες Υπηρεσιες",
-                stat_4: "Πιστοποιημενο Μελος",
-                bio_eyebrow: "Γνωριστε Με",
-                bio_name: "ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ",
-                bio_title: "Ψυχολόγος – Ψυχοθεραπεύτρια",
-                bio_p1: "Ονομάζομαι Ιωάννα Καρούζη και είμαι μέλος του <strong>European Association for Psychotherapy (EAP)</strong>. Με έδρα το ιδιωτικό μου γραφείο στον Άγιο Ελευθέριο, αλλά και διαδικτυακά, προσφέρω ένα ασφαλές περιβάλλον αποδοχής.",
-                bio_p2: "Είμαι απόφοιτη του <strong>Τμήματος Ψυχολογίας του Αριστοτελείου Πανεπιστημίου Θεσσαλονίκης</strong> και έχω εξειδικευτεί στην <strong>Προσωποκεντρική Προσέγγιση (Person-Centered Approach)</strong> στο ICPS. Η φιλοσοφία μου βασίζεται στη μη κατευθυντική παρεμβατικότητα: πιστεύω βαθιά πως κάθε άνθρωπος έχει τη δύναμη να βρει τις δικές του απαντήσεις, αρκεί να του δοθεί ο κατάλληλος χώρος και χρόνος.",
-                bio_p3: "Η επαγγελματική μου πορεία είναι πολυδιάστατη. Έχω εργαστεί σε ξενώνες και κέντρα ψυχικής υγείας, παρέχοντας υποστήριξη σε ευάλωτες κοινωνικές ομάδες, πρόσφυγες, καθώς και συμβουλευτική σε παιδιά και οικογένειες. Η εθελοντική μου προσφορά στο «Χαμόγελο του Παιδιού» και στη «Freedom Gate Greece» διαμόρφωσε την ενσυναίσθηση που χαρακτηρίζει κάθε θεραπευτική μου σχέση.",
-                bio_quote: "\"Συνεχίζω να επιμορφώνομαι διαρκώς, για να προσφέρω το καλύτερο σε εσάς.\"",
-                services_eyebrow: "Τομεις Εξειδικευσης",
-                services_title: "ΥΠΗΡΕΣΙΕΣ",
-                services_subtitle: "Με βάση την Προσωποκεντρική Προσέγγιση",
-                services_desc: "Προσεγγίσεις προσαρμοσμένες στις δικές σας ανάγκες, με απόλυτο σεβασμό.",
-                service_1_title: "ΑΤΟΜΙΚΗ ΨΥΧΟΘΕΡΑΠΕΙΑ & ΔΙΑΧΕΙΡΙΣΗ ΔΙΑΤΑΡΑΧΩΝ",
-                service_duration: "Διαρκεια: 50'",
-                s1_l1: "Άγχος και Στρες",
-                s1_l2: "Κρίσεις Πανικού",
-                s1_l3: "Ιδεοψυχαναγκαστική Διαταραχή",
-                s1_l4: "Ψυχοσωματικές Διαταραχές",
-                s1_l5: "Αντιμετώπιση Τραύματος",
-                service_2_title: "ΣΥΜΒΟΥΛΕΥΤΙΚΗ & ΠΡΟΣΩΠΙΚΗ ΑΝΑΠΤΥΞΗ",
-                s2_l1: "Ενίσχυση Αυτογνωσίας",
-                s2_l2: "Ανακάλυψη εαυτού",
-                s2_l3: "Διαχείριση Θυμού",
-                s2_l4: "Διαχείριση Πένθους",
-                s2_l5: "Προσαρμογή στην αλλαγή",
-                s2_l6: "Υποστήριξη ΛΟΑΤΚΙ+",
-                service_3_title: "ONLINE ΣΥΝΕΔΡΙΕΣ (ΕΞ ΑΠΟΣΤΑΣΕΩΣ)",
-                s3_desc: "Ιδανικό για όσους βρίσκονται εκτός Αθηνών ή προτιμούν την ασφάλεια του χώρου τους.",
-                s3_l1: "Βιντεοκλήση",
-                s3_l2: "Πλήρης αποτελεσματικότητα",
-                gallery_eyebrow: "Ο ΧΩΡΟΣ & Η ΕΜΠΝΕΥΣΗ",
-                gallery_title: "ΣΤΙΓΜΕΣ & ΣΚΕΨΕΙΣ",
-                contact_eyebrow: "ΕΠΙΚΟΙΝΩΝΙΑ",
-                contact_title_1: "ΞΕΚΙΝΗΣΤΕ ΤΟ",
-                contact_title_2: "ΤΑΞΙΔΙ ΣΑΣ",
-                contact_desc: "Επικοινωνήστε μαζί μου για να προγραμματίσουμε την πρώτη μας συνάντηση, δια ζώσης ή διαδικτυακά.",
-                contact_addr_title: "Διεύθυνση",
-                contact_addr_val: "Γλαράκη 10, Άγιος Ελευθέριος, Αττική",
-                contact_phone_title: "Τηλέφωνο",
-                contact_hours_title: "Ωράριο",
-                contact_hours_days: "Δευτέρα - Παρασκευή",
-                contact_hours_note: "Κατόπιν Ραντεβού",
-                footer_name: "ΙΩΑΝΝΑ ΚΑΡΟΥΖΗ",
-                footer_role: "ΨΥΧΟΛΟΓΟΣ - ΨΥΧΟΘΕΡΑΠΕΥΤΡΙΑ",
-                footer_desc: "Ένα ταξίδι αυτογνωσίας και ενδυνάμωσης με σεβασμό στη μοναδικότητα του κάθε ανθρώπου."
-            },
-            en: {
-                logo_name: "IOANNA KAROUZI",
-                logo_sub: "PSYCHOLOGIST - PSYCHOTHERAPIST",
-                nav_bio: "Biography",
-                nav_services: "Services",
-                nav_gallery: "Gallery",
-                nav_contact: "Contact",
-                btn_book: "Book Appointment",
-                hero_eyebrow: "European Association for Psychotherapy",
-                hero_title_1: "COMPANION ON THE JOURNEY OF",
-                hero_title_2: "your personal",
-                hero_title_3: "GROWTH.",
-                hero_subtitle: "A safe environment of acceptance and empowerment, designed to help you discover your own answers.",
-                btn_session: "Book A Session",
-                btn_meet_me: "Meet Me",
-                hero_quote: "\"Every person has the power to find their own answers.\"",
-                stat_1: "Personalized Care",
-                stat_2: "YEARS OF EXPERIENCE",
-                stat_3: "Different Services",
-                stat_4: "Certified Member",
-                bio_eyebrow: "Meet Me",
-                bio_name: "IOANNA KAROUZI",
-                bio_title: "Psychologist – Psychotherapist",
-                bio_p1: "My name is Ioanna Karouzi and I am a member of the <strong>European Association for Psychotherapy (EAP)</strong>. Based in my private office in Agios Eleftherios, as well as online, I offer a safe environment of acceptance.",
-                bio_p2: "I am a graduate of the <strong>Department of Psychology at the Aristotle University of Thessaloniki</strong> and I have specialized in the <strong>Person-Centered Approach</strong> at ICPS. My philosophy is based on non-directive intervention: I deeply believe that every person has the power to find their own answers, provided they are given the appropriate space and time.",
-                bio_p3: "My professional path is multidimensional. I have worked in shelters and mental health centers, providing support to vulnerable social groups, refugees, as well as counseling to children and families. My voluntary contribution to \"The Smile of the Child\" and \"Freedom Gate Greece\" shaped the empathy that characterizes every therapeutic relationship.",
-                bio_quote: "\"I continue to educate myself constantly, to offer the best to you.\"",
-                services_eyebrow: "Areas of Expertise",
-                services_title: "SERVICES",
-                services_subtitle: "Based on the Person-Centered Approach",
-                services_desc: "Approaches tailored to your needs, with absolute respect.",
-                service_1_title: "INDIVIDUAL PSYCHOTHERAPY & DISORDER MANAGEMENT",
-                service_duration: "Duration: 50'",
-                s1_l1: "Anxiety and Stress",
-                s1_l2: "Panic Attacks",
-                s1_l3: "Obsessive-Compulsive Disorder",
-                s1_l4: "Psychosomatic Disorders",
-                s1_l5: "Trauma Treatment",
-                service_2_title: "COUNSELING & PERSONAL DEVELOPMENT",
-                s2_l1: "Enhancing Self-Awareness",
-                s2_l2: "Self-Discovery",
-                s2_l3: "Anger Management",
-                s2_l4: "Grief Management",
-                s2_l5: "Adapting to Change",
-                s2_l6: "LGBTQ+ Support",
-                service_3_title: "ONLINE SESSIONS (REMOTE)",
-                s3_desc: "Ideal for those outside Athens or who prefer the safety of their own space.",
-                s3_l1: "Video Call",
-                s3_l2: "Full Effectiveness",
-                gallery_eyebrow: "SPACE & INSPIRATION",
-                gallery_title: "MOMENTS & THOUGHTS",
-                contact_eyebrow: "CONTACT",
-                contact_title_1: "START YOUR",
-                contact_title_2: "JOURNEY",
-                contact_desc: "Contact me to schedule our first meeting, in person or online.",
-                contact_addr_title: "Address",
-                contact_addr_val: "Glaraki 10, Agios Eleftherios, Attica",
-                contact_phone_title: "Phone",
-                contact_hours_title: "Hours",
-                contact_hours_days: "Monday - Friday",
-                contact_hours_note: "By Appointment",
-                footer_name: "IOANNA KAROUZI",
-                footer_role: "PSYCHOLOGIST - PSYCHOTHERAPIST",
-                footer_desc: "A journey of self-awareness and empowerment with respect for the uniqueness of every person."
-            }
-        };
+        langBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'el' ? 'en' : 'el';
+            updateContent();
+        });
 
-        // Language Logic
-        let currentLang = 'el';
-        const langBtn = document.getElementById('lang-btn');
+        // Navigation Scroll Effect
+        const navbar = document.getElementById('navbar');
+        const navContainer = document.getElementById('nav-container');
 
-        function updateContent() {
-            document.querySelectorAll('[data-i18n]').forEach(el => {
-                const key = el.getAttribute('data-i18n');
-                if (translations[currentLang][key]) {
-                    el.innerHTML = translations[currentLang][key]; // Use innerHTML to preserve <strong> tags
-                }
-            });
-            langBtn.textContent = currentLang === 'el' ? 'EN' : 'EL';
-        }
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.remove('py-6');
+                navbar.classList.add('py-3');
+                navContainer.classList.remove('glass');
+                navContainer.classList.add('glass', 'bg-white/95', 'shadow-sm');
+            } else {
+                navbar.classList.add('py-6');
+                navbar.classList.remove('py-3');
+                navContainer.classList.add('glass');
+                navContainer.classList.remove('bg-white/95', 'shadow-sm');
+            }
+        });
 
-        langBtn.addEventListener('click', () => {
-            currentLang = currentLang === 'el' ? 'en' : 'el';
-            updateContent();
-        });
+        // Mobile Menu Logic
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('close-mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
 
-        // Navigation Scroll Effect
-        const navbar = document.getElementById('navbar');
-        const navContainer = document.getElementById('nav-container');
+        function toggleMenu() {
+            mobileMenu.classList.toggle('translate-y-full');
+        }
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.remove('py-6');
-                navbar.classList.add('py-3');
-                navContainer.classList.remove('glass');
-                navContainer.classList.add('glass', 'bg-white/95', 'shadow-sm');
-            } else {
-                navbar.classList.add('py-6');
-                navbar.classList.remove('py-3');
-                navContainer.classList.add('glass');
-                navContainer.classList.remove('bg-white/95', 'shadow-sm');
-            }
-        });
+        mobileBtn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
 
-        // Mobile Menu Logic
-        const mobileBtn = document.getElementById('mobile-menu-btn');
-        const closeBtn = document.getElementById('close-mobile-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+        // Reveal on Scroll Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
 
-        function toggleMenu() {
-            mobileMenu.classList.toggle('translate-y-full');
-        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Only animate once
+                }
+            });
+        }, observerOptions);
 
-        mobileBtn.addEventListener('click', toggleMenu);
-        closeBtn.addEventListener('click', toggleMenu);
-        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
 
-        // Reveal on Scroll Observer
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); // Only animate once
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Custom Parallax Logic (Deleted as sections are removed)
-    </script>
+        // Custom Parallax Logic (Deleted as sections are removed)
+    </script>
 </body>
 </html>
